@@ -17,7 +17,7 @@ x_std = np.std(x, ddof=1)
 print(x_std)
 
 t = (mu_x-mu_0)/x_std * np.sqrt(n)
-print(t)    # -1.1227217828476797 расчётный критерий
+print(t)    # -1.0651074037450896 расчётный критерий
 
 print(stats.t.ppf(1-alfa/2, n-1)) # 3.2498355440153697 - правая граница 
 print(stats.t.ppf(alfa/2, n-1)) # -3.2498355440153697 - левая граница
